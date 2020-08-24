@@ -1,12 +1,12 @@
 .item {
     box-sizing: border-box;
     border: 1px solid $item-border-color;
-    height: 100%;
     display: flex;
     flex-direction: column;
 
     &_unactive {
-        opacity: 50%;
+        filter: Alpha(opacity=50);
+        opacity: 0.5;
     }
 
     &__img {

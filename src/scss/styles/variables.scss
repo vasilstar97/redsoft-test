@@ -1,11 +1,11 @@
 $section-width: 1920px-(352px*2);
 
 @mixin set-section-width {
-    max-width: $section-width;
+    width: $section-width;
     margin: 0 auto;
 
     @media(max-width:1366px) {
-        max-width: 1000px;
+        width: 1000px;
     }
 }
 
