@@ -10,12 +10,18 @@
         display: flex;
         margin-left: -32px;
         margin-top: -32px;
+        flex-wrap: wrap;
     }
 
     &__cell {
+        box-sizing: border-box;
         padding-left: 32px;
         padding-top: 32px;
         width: 25%;
+
+        @media(max-width:1366px) {
+            width: 50%;
+        }
     }
 
     &__item {}

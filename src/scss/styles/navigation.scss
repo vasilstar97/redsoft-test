@@ -1,0 +1,60 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__items {
+        margin-left: -48px;
+        display: flex;
+        align-items: center;
+
+        @media(max-width:1366px) {
+            margin-left: -30px;
+        }
+    }
+
+    &__item {
+        display: block;
+        margin-left: 48px;
+
+        @media(max-width:1366px) {
+            margin-left: 30px;
+        }
+    }
+
+    &__link {
+
+        &:before {
+            position: absolute;
+            left: 7px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &_location {
+            vertical-align: middle;
+            padding-left: 24px;
+            position: relative;
+
+            &:before {
+                content: url(../img/location.svg);
+            }
+        }
+
+        &_phone {
+            vertical-align: middle;
+            padding-left: 24px;
+            position: relative;
+
+            &:before {
+                content: url(../img/phone.svg);
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 48px;
+        display: block;
+    }
+
+}

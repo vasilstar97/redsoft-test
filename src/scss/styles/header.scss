@@ -2,7 +2,7 @@
     padding: 24px 0;
     border-bottom: 1px solid $header-border-color;
 
-    &__nav {
+    &__navigation {
         @include set-section-width;
     }
 }

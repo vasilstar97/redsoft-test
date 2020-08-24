@@ -3,6 +3,10 @@ $section-width: 1920px-(352px*2);
 @mixin set-section-width {
     max-width: $section-width;
     margin: 0 auto;
+
+    @media(max-width:1366px) {
+        max-width: 1000px;
+    }
 }
 
 $header-border-color: #E1E1E1;
@@ -10,3 +14,4 @@ $item-border-color: #E1E1E1;
 $item-unactive-price-color: #A0A0A0;
 $item-price-color: #343030;
 $footer-background-color: #ECEAEA;
+$footer-font-color: #555555;
