@@ -1,4 +1,5 @@
-@import 'normalize.css';
+//normalize
+@import 'normalize.scss';
 
 //framework
 @import 'framework/colors.scss';
@@ -6,3 +7,10 @@
 @import 'framework/button.scss';
 @import 'framework/search.scss';
 @import 'framework/style.scss';
+
+//main styles 
+@import 'styles/variables.scss';
+@import 'styles/header.scss';
+@import 'styles/main.scss';
+@import 'styles/footer.scss';
+@import 'styles/item.scss';

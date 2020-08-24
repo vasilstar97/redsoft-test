@@ -1,0 +1,22 @@
+.main {
+    @include set-section-width;
+    padding: 45px 0 320px 0;
+
+    &__heading {
+        margin-bottom: 40px;
+    }
+
+    &__grid {
+        display: flex;
+        margin-left: -32px;
+        margin-top: -32px;
+    }
+
+    &__cell {
+        padding-left: 32px;
+        padding-top: 32px;
+        width: 25%;
+    }
+
+    &__item {}
+}

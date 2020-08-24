@@ -6,21 +6,79 @@
     <title>Redsoft Test</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="Vasiliy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="build/css/styles.css">
 
 </head>
 
 <body>
-    <button class="button">Нормал</button>
-    <button class="button button_is-loading">Нормал</button>
-    <button class="button" disabled="disabled">Нормал</button>
-    <button class="button button_in-cart">Нормал</button>
+    <header class="header">
 
-    <form action="" class="search">
-        <input class="search__input" type="text" name="" id="" placeholder="Поиск по названию картины">
-        <input class="search__button button" type="submit" value="Найти">
-    </form>
+    </header>
+    <main class="main">
+        <h1 class="main__heading">Картины эпохи Возрождения</h1>
+        <div class="main__grid">
+            <div class="main__cell">
+                <div class="main__item item">
+                    <div class="item__img" style="background-image:url(build/img/1.png)"></div>
+                    <div class="item__content">
+                        <h2 class="item__heading">«Рождение Венеры» Сандро Боттичелли</h2>
+                        <div class="item__grid">
+                            <ul class="item__price">
+                                <li>2 000 000 $</li>
+                                <li>1 000 000 $</li>
+                            </ul>
+                            <button class="item__button button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__cell">
+                <div class="main__item item">
+                    <div class="item__img" style="background-image:url(build/img/2.png)"></div>
+                    <div class="item__content">
+                        <h2 class="item__heading">«Тайная вечеря» Леонардо да Винчи</h2>
+                        <div class="item__grid">
+                            <ul class="item__price">
+                                <li>3 000 000 $</li>
+                            </ul>
+                            <button class="item__button button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__cell">
+                <div class="main__item item">
+                    <div class="item__img" style="background-image:url(build/img/3.png)"></div>
+                    <div class="item__content">
+                        <h2 class="item__heading">«Сотворение Адама» Микеланджело</h2>
+                        <div class="item__grid">
+                            <ul class="item__price">
+                                <li>6 000 000 $</li>
+                                <li>5 000 000 $</li>
+                            </ul>
+                            <button class="item__button button button_in-cart">В корзине</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__cell">
+                <div class="main__item item item_unactive">
+                    <div class="item__img" style="background-image:url(build/img/4.png)"></div>
+                    <div class="item__content">
+                        <h2 class="item__heading">«Урок анатомии» Рембрандт</h2>
+                        <div class="item__grid">
+                            <h3 class="item__sold">Продана на аукционе</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
 
     <script src="build/js/scripts.js"></script>
 </body>

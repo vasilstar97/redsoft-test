@@ -1,0 +1,8 @@
+.footer {
+    padding: 24px 0;
+    background-color: $footer-background-color;
+
+    &__nav {
+        @include set-section-width;
+    }
+}
