@@ -1,0 +1,28 @@
+.search {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 416px;
+
+    &__input {
+        padding: 0px 16px;
+        color: $srch-font-color;
+        border: 1px solid $srch-border-color;
+        background-color: transparent;
+        box-sizing: border-box;
+        flex-grow: 1;
+
+        &::placeholder {
+            color: inherit;
+        }
+
+        &:focus {
+            border-color: $srch-border-active-color;
+            outline: none;
+            color: $srch-font-active-color;
+        }
+    }
+
+    &__button {
+        min-width: 122px;
+    }
+}

@@ -1,0 +1,76 @@
+.button {
+    display: block;
+    border: none;
+    color: $btn-font-color;
+    background-color: $btn-normal-color;
+    padding: 14px 9px;
+    line-height: 150%;
+    box-sizing: border-box;
+    min-width: 112px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $btn-hover-color;
+    }
+
+    &:disabled {
+        background-color: $btn-disable-color;
+    }
+
+    &_is-loading {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            box-sizing: border-box;
+            background-color: $btn-disable-color;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            box-sizing: border-box;
+            left: 50%;
+            top: 50%;
+            border: 2px solid #FFFFFF;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            animation: loader 1s ease-in-out infinite;
+        }
+    }
+
+    @keyframes loader {
+        from {
+            opacity: 1;
+            width: 10px;
+            height: 10px;
+        }
+
+        to {
+            opacity: 0;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &_in-cart {
+        background-color: $btn-cart-color;
+        position: relative;
+
+        &:before {
+            content: url('../img/mark.svg');
+            margin-right: 7px;
+        }
+    }
+}

@@ -27,7 +27,7 @@ gulp.task('scss', function () {
     return gulp.src(srcDir + '/scss/styles.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
-            cascade: true
+            cascade: false
         }))
         .pipe(cleanCSS({
             compatibility: 'ie8'
