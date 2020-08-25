@@ -13,7 +13,7 @@ function refreshStorage() {
 function toggleButton(button, cls, doRefresh) {
     if (button.classList) {
         button.classList.toggle(cls);
-        if (button.classList.contains(cls))
+        if (button.classList.contains("button_in-cart"))
             button.innerHTML = "В корзине";
         else button.innerHTML = "Купить";
     } else {
