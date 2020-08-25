@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     browserSync = require('browser-sync').create(),
     sass = require('gulp-sass'),
+    babel = require('gulp-babel'),
     cleanCSS = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer');
 
