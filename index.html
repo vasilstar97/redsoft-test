@@ -41,7 +41,7 @@
         <h1 class="main__heading">Картины эпохи Возрождения</h1>
         <div class="main__grid">
             <div class="main__cell">
-                <div class="main__item item">
+                <div class="main__item item" data-id="1">
                     <div class="item__img" style="background-image:url(build/img/1.png)"></div>
                     <div class="item__content">
                         <h2 class="item__heading">«Рождение Венеры» Сандро Боттичелли</h2>
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="main__cell">
-                <div class="main__item item">
+                <div class="main__item item" data-id="2">
                     <div class="item__img" style="background-image:url(build/img/2.png)"></div>
                     <div class="item__content">
                         <h2 class="item__heading">«Тайная вечеря» Леонардо да Винчи</h2>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="main__cell">
-                <div class="main__item item">
+                <div class="main__item item" data-id="3">
                     <div class="item__img" style="background-image:url(build/img/3.png)"></div>
                     <div class="item__content">
                         <h2 class="item__heading">«Сотворение Адама» Микеланджело</h2>
@@ -79,13 +79,13 @@
                                 <li>6 000 000 $</li>
                                 <li>5 000 000 $</li>
                             </ul>
-                            <button class="item__button button button_in-cart">В корзине</button>
+                            <button class="item__button button">Купить</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="main__cell">
-                <div class="main__item item item_unactive">
+                <div class="main__item item item_unactive" data-id="4">
                     <div class="item__img" style="background-image:url(build/img/4.png)"></div>
                     <div class="item__content">
                         <h2 class="item__heading">«Урок анатомии» Рембрандт</h2>
@@ -122,6 +122,8 @@
         </div>
     </header>
 
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <script src="node_modules/whatwg-fetch/dist/fetch.umd.js"></script>
     <script src="build/js/scripts.js"></script>
 </body>
 
